@@ -26,7 +26,7 @@ def recommend(movie):
     return recommended_movie_names,recommended_movie_posters
 
 
-st.header('Movie Recommender System')
+st.header('NameFlix (Movie Recommender System)')
 # Load the compressed pickle files
 with bz2.BZ2File('movie_list.pkl.bz2', 'rb') as f:
     movies = cPickle.load(f)
